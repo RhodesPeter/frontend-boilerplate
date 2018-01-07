@@ -1,5 +1,7 @@
-const exampleFunc = () => {
-  console.log('hello');
+import { sum } from './modules/sum.js';
+
+const exampleFunc = (a, b) => {
+  console.log(sum(a, b));
 }
 
-exampleFunc();
+exampleFunc(5, 2);
