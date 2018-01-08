@@ -12,15 +12,25 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+    postcss: {
+      options: {
+        map: true,
+        processors: [ require('autoprefixer')({browsers: 'last 2 versions'}) ]
+      },
+      dist: {
+        src: 'public/build/main.css'
+      }
+    },
 		watch: {
 			css: {
 				files: 'scss/*.scss',
-				tasks: ['sass']
+				tasks: ['sass', 'postcss']
 			}
 		}
   });
 
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default',['watch']);
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-postcss');
+  grunt.registerTask('default', ['watch']);
 };

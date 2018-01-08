@@ -2,4 +2,5 @@ $exampleVariable: #ff0000;
 
 body {
   background-color: $exampleVariable;
+  transition: all 3s ease;
 }
