@@ -1,6 +1,4 @@
 body {
   background-color: #ff0000;
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease; }
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsMEJBQTBCO0VBQzFCLGdDQUF3QjtFQUF4Qix3QkFBd0IsRUFBRSIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmYwMDAwO1xuICB0cmFuc2l0aW9uOiBhbGwgM3MgZWFzZTsgfVxuIl19 */
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease; }

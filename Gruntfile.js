@@ -14,17 +14,23 @@ module.exports = function(grunt) {
 		},
     postcss: {
       options: {
-        map: true,
+        map: false,
         processors: [ require('autoprefixer')({browsers: 'last 2 versions'}) ]
       },
       dist: {
         src: 'public/build/main.css'
       }
     },
+    stylelint: {
+      options: {
+        configFile: '.stylelintrc',
+      },
+      all: ['scss/**/*.scss']
+    },
 		watch: {
 			css: {
 				files: 'scss/*.scss',
-				tasks: ['sass', 'postcss']
+				tasks: ['sass', 'postcss', 'stylelint']
 			}
 		}
   });
@@ -32,5 +38,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-stylelint');
   grunt.registerTask('default', ['watch']);
 };
