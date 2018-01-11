@@ -1,7 +1,7 @@
-import { sum } from './modules/sum.js';
+import sum from './modules/sum';
 
 const exampleFunc = (a, b) => {
   console.log(sum(a, b));
-}
+};
 
-exampleFunc(5, 2);
+exampleFunc(5, 5);
