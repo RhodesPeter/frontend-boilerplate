@@ -4,4 +4,4 @@ const exampleFunc = (a, b) => {
   console.log(sum(a, b));
 };
 
-exampleFunc(5, 5);
+exampleFunc(10, 2);
