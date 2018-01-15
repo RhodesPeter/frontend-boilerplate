@@ -65,27 +65,27 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/*!****************************!*\
-  !*** ./public/js/index.js ***!
-  \****************************/
-/*! dynamic exports provided */
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
+/*! no exports provided */
 /*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _sum = __webpack_require__(/*! ./modules/sum.js */ 1);\n\nvar exampleFunc = function exampleFunc(a, b) {\n  console.log((0, _sum.sum)(a, b));\n};\n\nexampleFunc(5, 2);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9wdWJsaWMvanMvaW5kZXguanM/ZTcwZiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzdW0gfSBmcm9tICcuL21vZHVsZXMvc3VtLmpzJztcblxuY29uc3QgZXhhbXBsZUZ1bmMgPSAoYSwgYikgPT4ge1xuICBjb25zb2xlLmxvZyhzdW0oYSwgYikpO1xufVxuXG5leGFtcGxlRnVuYyg1LCAyKTtcblxuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyBwdWJsaWMvanMvaW5kZXguanMiXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///0\n");
+eval("Object.defineProperty(__webpack_exports__, \"__esModule\", { value: true });\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_sum__ = __webpack_require__(/*! ./modules/sum */ 1);\n\n\nconst exampleFunc = (a, b) => {\n  console.log(Object(__WEBPACK_IMPORTED_MODULE_0__modules_sum__[\"a\" /* default */])(a, b));\n};\n\nexampleFunc(10, 2);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9qcy9pbmRleC5qcz83MmQzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBzdW0gZnJvbSAnLi9tb2R1bGVzL3N1bSc7XG5cbmNvbnN0IGV4YW1wbGVGdW5jID0gKGEsIGIpID0+IHtcbiAgY29uc29sZS5sb2coc3VtKGEsIGIpKTtcbn07XG5cbmV4YW1wbGVGdW5jKDEwLCAyKTtcblxuXG5cbi8vLy8vLy8vLy8vLy8vLy8vL1xuLy8gV0VCUEFDSyBGT09URVJcbi8vIC4vc3JjL2pzL2luZGV4LmpzXG4vLyBtb2R1bGUgaWQgPSAwXG4vLyBtb2R1bGUgY2h1bmtzID0gMCJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///0\n");
 
 /***/ }),
 /* 1 */
-/*!**********************************!*\
-  !*** ./public/js/modules/sum.js ***!
-  \**********************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
+/*!*******************************!*\
+  !*** ./src/js/modules/sum.js ***!
+  \*******************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nvar sum = function sum(a, b) {\n    return a + b;\n};\n\nexports.sum = sum;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9wdWJsaWMvanMvbW9kdWxlcy9zdW0uanM/MTIzNyJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBzdW0gPSAoYSwgYikgPT4ge1xuICAgIHJldHVybiBhICsgYjtcbn07XG5cbmV4cG9ydCB7IHN1bSB9O1xuXG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIHB1YmxpYy9qcy9tb2R1bGVzL3N1bS5qcyJdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///1\n");
+eval("const sum = (a, b) => a + b;\n\n/* harmony default export */ __webpack_exports__[\"a\"] = (sum);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9qcy9tb2R1bGVzL3N1bS5qcz82YjBhIl0sInNvdXJjZXNDb250ZW50IjpbImNvbnN0IHN1bSA9IChhLCBiKSA9PiBhICsgYjtcblxuZXhwb3J0IGRlZmF1bHQgc3VtO1xuXG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9zcmMvanMvbW9kdWxlcy9zdW0uanNcbi8vIG1vZHVsZSBpZCA9IDFcbi8vIG1vZHVsZSBjaHVua3MgPSAwIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///1\n");
 
 /***/ })
 /******/ ]);

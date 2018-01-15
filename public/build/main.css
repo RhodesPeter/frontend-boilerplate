@@ -1,2 +1,4 @@
 body {
-  background-color: #ff0000; }
+  background-color: #ff0000;
+  -webkit-transition: all 8s ease;
+  transition: all 8s ease; }

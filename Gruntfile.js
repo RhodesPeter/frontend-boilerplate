@@ -1,26 +1,44 @@
-module.exports = function(grunt) {
+const autoprefixer = require('autoprefixer');
 
+module.exports = (grunt) => {
   grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
-		sass: {
-			dist: {
+    pkg: grunt.file.readJSON('package.json'),
+    sass: {
+      dist: {
         options: {
-          sourcemap: 'none'
+          sourcemap: 'none',
         },
-				files: {
-					'public/build/main.css' : 'scss/main.scss'
-				}
-			}
-		},
-		watch: {
-			css: {
-				files: 'scss/*.scss',
-				tasks: ['sass']
-			}
-		}
+        files: {
+          'public/build/main.css': 'src/scss/**/*.scss',
+        },
+      },
+    },
+    postcss: {
+      options: {
+        map: false,
+        processors: autoprefixer({ browsers: 'last 2 versions' }),
+      },
+      dist: {
+        src: 'public/build/main.css',
+      },
+    },
+    stylelint: {
+      options: {
+        configFile: '.stylelintrc',
+      },
+      all: ['src/scss/**/*.scss'],
+    },
+    watch: {
+      css: {
+        files: 'src/scss/**/*.scss',
+        tasks: ['sass', 'postcss', 'stylelint'],
+      },
+    },
   });
 
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default',['watch']);
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-stylelint');
+  grunt.registerTask('default', ['watch']);
 };
