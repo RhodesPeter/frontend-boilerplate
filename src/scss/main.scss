@@ -1,6 +1,2 @@
-$exampleVariable: #ff0000;
-
-body {
-  background-color: $exampleVariable;
-  transition: all 8s ease;
-}
+@import 'base/variables';
+@import 'pages/example-page';

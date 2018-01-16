@@ -9,14 +9,14 @@ module.exports = (grunt) => {
           sourcemap: 'none',
         },
         files: {
-          'public/build/main.css': 'src/scss/**/*.scss',
+          'public/build/main.css': 'src/scss/main.scss',
         },
       },
     },
     postcss: {
       options: {
         map: false,
-        processors: autoprefixer({ browsers: 'last 2 versions' }),
+        processors: [autoprefixer({ browsers: 'last 2 versions' })],
       },
       dist: {
         src: 'public/build/main.css',
